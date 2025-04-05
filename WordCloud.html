@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Cloud Generator</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
+    <script defer src="WordCloud.js"></script>
+</head>
+<body>
+<h2><center>Word Cloud</center></h2>
+<center>
+    <input type="text" id="word-input" placeholder="Enter a word">
+    
+    
+    <button onclick="fetchSynonyms()">Generate Word Cloud</button>
+    
+    <div id="word-cloud"></div>
+</center>
+
+<style>
+
+	body {
+            font-family: Times New Roman, serif;
+            background-color: #E6E6FA;
+        }
+        svg {
+            margin: 50px;
+            border: 3px solid #ccc;
+        }
+
+</style>
+</body>
+</html>
